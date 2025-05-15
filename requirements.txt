@@ -1,11 +1,9 @@
 streamlit
-pandas
-numpy
-torch
-transformers
+langchain
+langchain_community
+langchain_huggingface
+huggingface_hub
 sentence-transformers
 faiss-cpu
-langchain
-langchain-community
-pypdf
-
+transformers
+torch
