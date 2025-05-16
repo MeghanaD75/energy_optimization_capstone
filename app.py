@@ -16,7 +16,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 
 st.title("🔋 Smart Factory Energy Optimizer")
 
-csv_path = r"C:\Users\manda\Downloads\manufacturing_data.csv"
+csv_path = r"data/manufacturing_data.csv"
 if os.path.exists(csv_path):
     df = pd.read_csv(csv_path)
     st.subheader("📊 Uploaded Energy Data")
@@ -24,7 +24,7 @@ if os.path.exists(csv_path):
 else:
     st.error(f"CSV file not found at: {csv_path}")
 
-pdf_path = r"C:\Users\manda\Downloads\iso50001 (1).pdf.pdf"
+pdf_path = r"documents/iso50001_guidelines.pdf"
 if os.path.exists(pdf_path):
     try:
         vectorstore = load_docs_to_vectorstore(pdf_path)
