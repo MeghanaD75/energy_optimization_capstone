@@ -25,6 +25,13 @@ else:
     st.error(f"CSV file not found at: {csv_path}")
 
 pdf_path = r"documents/iso50001_guidelines.pdf"
+
+# Check if PDF exists and print status
+if os.path.exists(pdf_path):
+    print("PDF found!")
+else:
+    print("PDF NOT found!")
+
 if os.path.exists(pdf_path):
     try:
         vectorstore = load_docs_to_vectorstore(pdf_path)
