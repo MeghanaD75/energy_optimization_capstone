@@ -1,9 +1,8 @@
 streamlit
 pandas
-numpy
+transformers
+torch
 langchain
 langchain-community
-huggingface_hub
-sentence-transformers
-PyPDF2
-scikit-learn
+langchain-huggingface
+pypdf
